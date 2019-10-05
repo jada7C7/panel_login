@@ -1,0 +1,89 @@
+body {
+  background-image: url("img/qbkls.png");
+  font-size: 20px;
+}
+#container {
+  background-color: white;
+  width: 300px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  -webkit-box-shadow: 3px 3px 25px 19px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 3px 3px 25px 19px rgba(204, 204, 204, 1);
+  box-shadow: 3px 3px 25px 19px rgba(204, 204, 204, 1);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  font-size: 20px;
+  background-color: #ebebeb; /*kolor pola loginu i hasła*/
+  color: #99989d; /*kolor do tekstu wpisywanego*/
+  border: 2px solid #dedede; /*kolor  obramowania pola  loginu i hasła*/
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-sizing: border-box; /*wielkosć przycisku= wielkość pola loginu (hasła)*/
+  margin-top: 10px;
+  outline: none;
+}
+
+input[type="text"]:focus, /* wlaściwości po najechaniu pola*/
+input[type="password"]:focus {
+  -webkit-box-shadow: 0px 0px 10px 2px #e1e1e1;
+  -moz-box-shadow: 0px 0px 10px 2px #e1e1e1;
+  box-shadow: 0px 0px 10px 2px #e1e1e1;
+  border: 2px solid #c3c3c3;
+  background-color: #dcdcdc;
+  color: #00656e;
+}
+
+input[type="submit"] {
+  width: 300px;
+  background-color: #008787;
+  font-size: 20px;
+  color: white;
+  padding: 15px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+}
+input[type="submit"]:focus {
+  -webkit-box-shadow: -2px 3px 20px -4px rgba(222, 222, 222, 1);
+  -moz-box-shadow: -2px 3px 20px -4px rgba(222, 222, 222, 1);
+  -box-shadow: -2px 3px 20px -4px rgba(222, 222, 222, 1);
+}
+input[type="submit"]:hover {
+  background-color: #00baba;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+input:focus::-webkit-input-placeholder {
+  color: #428c42;
+}
+/* Firefox < 19 */
+input:-moz-placeholder {
+  color: #999;
+}
+input:focus:-moz-placeholder {
+  color: #428c42;
+}
+/* Firefox > 19 */
+input::-moz-placeholder {
+  color: #999;
+}
+input:focus::-moz-placeholder {
+  color: #428c42;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+  color: #999;
+}
+input:focus:-ms-input-placeholder {
+  color: #428c42;
+}
